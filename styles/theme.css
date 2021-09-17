@@ -2,10 +2,13 @@
   --color-primary: white;
   --font-color: #000000;
   --shadow: 0 8px 6px -6px #999;
+  --transition-delay: 1s ;
+  --accent-color: #f9d71c;
 }
 
 [data-theme="dark"] {
-  --color-primary: #1a1a1b;
+  --color-primary: #16102e;
   --font-color: white;
   --shadow: 0 8px 6px -6px grey;
+  --accent-color: #D9FBFD;
 }

@@ -1,8 +1,7 @@
 @import url("theme.css");
 @font-face {
   font-family: "Nunito";
-  src: local("Nunito"),
-    url(/public/fonts/Nunito-Regular.ttf) format("ttf");
+  src: local("Nunito"), url(/public/fonts/Nunito-Regular.ttf) format("ttf");
 }
 
 .nav {
@@ -17,7 +16,6 @@
 }
 
 .nav .nav-brand-name {
-
   margin-top: 10px;
   margin-left: 14px;
   font-weight: 500;
@@ -26,18 +24,19 @@
   /* font-family: "Nunito"; */
 }
 
-/* .nav-brand-profile{
-  margin-top: 10px;
+.nav-brand-profile{
   width: 58px;
   height: 58px;
   border-radius: 50%;
-} */
+  
+}
 
-.nav-name{
-   display: flex;
-   justify-content: center;
+.nav-name {
+  display: flex;
+  justify-content: center;
 }
 
 .nav .nav-theme-switcher {
   margin-top: 25px;
 }
+

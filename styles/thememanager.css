@@ -1,0 +1,74 @@
+@import url("theme.css");
+
+.sun-moon {
+  --rotation: 0;
+  position: absolute;
+  height: 200vmin;
+  transform: rotate(calc(var(--rotation-sun) * 1deg));
+  transition: transform var(--transition-delay);
+}
+
+.sun-moon-2 {
+  --rotation: 0;
+  position: absolute;
+  height: 200vmin;
+  transform: rotate(calc(var(--rotation-moon) * 1deg));
+  transition: transform var(--transition-delay);
+}
+
+[data-theme="dark"] .sun-moon {
+  --rotation-sun: 180;
+}
+
+[data-theme="dark"] .sun-moon-2 {
+  --rotation-moon: 180;
+}
+
+.sun,
+.moon {
+  position: absolute;
+  transition: opacity, fillvar(--transition-delay);
+  width: 30px;
+  height: 30px;
+  fill: var(--accent-color);
+}
+
+.sun {
+  top: 1%;
+  opacity: 1;
+}
+
+[data-theme="dark"] .sun {
+  opacity: 0;
+}
+
+.moon {
+  bottom: 1%;
+  opacity: 0;
+  animation: juggling 2.1s 4s infinite;
+  transform: rotate(180deg);
+}
+
+[data-theme="dark"] .moon {
+  opacity: 1;
+}
+
+  
+  @keyframes juggling {
+    0% {
+      transform: rotate(180deg);
+    }
+    10% {
+      transform: rotate(190deg);
+    }
+    20% {
+      transform: rotate(170deg);
+    }
+    30% {
+      transform: rotate(190deg);
+    }
+    40% {
+      transform: rotate(180deg);
+    }    
+  }
+  
