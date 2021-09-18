@@ -7,11 +7,11 @@
 .nav {
   background-color: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav .nav-brand {
-  padding: 18px;
+  padding: 18px 18px 18px 18px;
   display: flex;
 }
 
@@ -19,12 +19,9 @@
   margin-top: 10px;
   margin-left: 14px;
   font-weight: 500;
-  /* padding: 5px;
-  border: 2px dotted lightblue; */
-  /* font-family: "Nunito"; */
 }
 
-.nav-brand-profile{
+.nav-brand-profile {
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -36,6 +33,6 @@
 }
 
 .nav .nav-theme-switcher {
-  margin-top: 25px;
+  margin-top: 14px;
+  margin-right: 25px;
 }
-

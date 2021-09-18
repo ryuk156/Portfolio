@@ -2,7 +2,9 @@
 @import url("navbar.css");
 @import url("content.css");
 @import url("thememanager.css");
-
+@import url("board.css");
+@import url("card.css");
+@import url("footer.css");
 html,
 body {
   padding: 0;
@@ -18,4 +20,3 @@ body {
 * {
   box-sizing: border-box;
 }
-
