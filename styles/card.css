@@ -10,7 +10,6 @@
   color: var(--card-font-color);
   transition: 0.3s;
   transform: scale(1);
-  z-index: 1;
 }
 
 .card:hover,
