@@ -4,7 +4,9 @@
 @import url("thememanager.css");
 @import url("board.css");
 @import url("card.css");
+@import url("modal.css");
 @import url("footer.css");
+
 html,
 body {
   padding: 0;
@@ -14,7 +16,8 @@ body {
   color: var(--font-color);
   background-color: var(--color-primary);
   transition: var(--transition-delay);
-  overflow: hidden;
+  overflow-x: hidden;
+  
 }
 
 * {

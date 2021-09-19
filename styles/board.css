@@ -1,26 +1,23 @@
-
 @import url("theme.css");
 
-.board{
-    margin-top: 10px;
-    width: 100%;
-    background-color: var(--card-color);
-    /* padding: 4px; */
-    border-radius: 15px;
+.board {
+  margin-top: 10px;
+  width: 100%;
+  background-color: var(--card-color);
+  /* padding: 4px; */
+  border-radius: 15px;
 }
 
-
 .board-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.5rem;
-    grid-template-rows: auto;
-    padding: 3px;
-    margin: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.8rem;
+  grid-template-rows: auto;
+  padding: 3px;
+  margin: 12px;
+}
 
-  }
-  
-  /* .board-item-a {
+/* .board-item-a {
     grid-area: item-1;
   }
   
@@ -31,5 +28,5 @@
 @media only screen and (max-width: 850px) {
   .board-content {
     grid-template-columns: 1fr;
-    }
   }
+}

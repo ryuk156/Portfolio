@@ -5,6 +5,7 @@
 }
 
 .content_container {
+  min-height: 100vmin;
   display: flex;
   align-items: center;
   flex-direction: column;

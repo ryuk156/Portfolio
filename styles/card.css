@@ -8,12 +8,14 @@
   margin: 0.5rem 0;
   box-shadow: var(--shadow);
   color: var(--card-font-color);
-  transition: box-shadow 0.3s;
+  transition: 0.3s;
+  transform: scale(1);
+  z-index: 1;
 }
 
-
-.card:hover {
-    box-shadow: 6px 8px 6px -6px transparent;
+.card:hover,
+.card:focus {
+  transform: scale(1.03);
 }
 
 .card-content {
@@ -32,8 +34,8 @@
   grid-area: item-2;
 }
 
-.card-img{
-    width: 35px;
-    height: 35px;
-    border-radius: 4px ;
+.card-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
 }
