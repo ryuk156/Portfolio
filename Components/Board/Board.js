@@ -1,13 +1,17 @@
 import Card from "../Card/Card";
 
-const Board = () => {
+const Board = ({cardsData}) => {
   return (
     <div className="board">
       <div className="board-content">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {
+         cardsData && cardsData.map((card)=>{
+            return(
+              <Card key={card.id} title={card.title} id={card.id}  />
+            )
+          })
+        }
+       
       </div>
     </div>
   );

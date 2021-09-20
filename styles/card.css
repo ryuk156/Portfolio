@@ -19,7 +19,7 @@
 
 .card-content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: auto;
   grid-template-areas: "item-1 item-2";
   padding: 2px;
@@ -31,6 +31,7 @@
 
 .card-item-b {
   grid-area: item-2;
+  padding-top: 8px;
 }
 
 .card-img {

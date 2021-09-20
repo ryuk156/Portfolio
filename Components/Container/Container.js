@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Board from "../Board/Board";
 
-const Container = () => {
+const Container = ({content}) => {
   return (
     <div className="content_container">
       <div>
@@ -11,7 +11,7 @@ const Container = () => {
         <div className="intro_content">
           I'm Yash and I'm UI Engineer and an open source contributor
         </div>
-        <Board />
+        <Board cardsData={content}/>
        
       </div>
     </div>

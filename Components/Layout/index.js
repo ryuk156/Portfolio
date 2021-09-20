@@ -6,7 +6,7 @@ const Layout = ({data}) => {
   return (
     <div className="main-container">
       <Navbar />
-      <Container />
+      <Container content={data}/>
       <Footer />
 
     </div>
