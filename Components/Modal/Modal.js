@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import { useRouter } from 'next/dist/client/router';
 import Link from "next/link";
 const Modal = ({ title, layoutRef }) => {
+  const router = useRouter();
   useEffect(() => {
     const getRef = layoutRef?.current;
     document.body.classList.add("hide-all-scroll");
@@ -11,11 +13,15 @@ const Modal = ({ title, layoutRef }) => {
     };
   }, [layoutRef]);
 
+  function onClose() {
+    router.push('/', undefined, { scroll: false });
+  }
+
   return (
     <div>
-      <Link href={"/"}>
-        <div className="modal"> </div>
-      </Link>
+    
+        <div className="modal" onClick={()=>onClose()}> </div>
+    
       <div className="modal-content">{title}</div>
     </div>
   );
