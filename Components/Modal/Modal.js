@@ -1,14 +1,14 @@
+import React from "react";
+import Link from "next/link";
+const Modal = ({ title }) => {
+  return (
+    <div>
+      <Link href={"/"}>
+        <div className="modal"> </div>
+      </Link>
+      <div className="modal-content">{title}</div>
+    </div>
+  );
+};
 
-
-const Modal=()=>{
-    return(
-        <div className="modal">
-        <div className="modal-content">
-           I'm modal
-        </div>
-     </div>
-    )
-
-}
-
-export default Modal
+export default Modal;

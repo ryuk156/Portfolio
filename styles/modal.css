@@ -1,33 +1,39 @@
 @import url("theme.css");
 
 .modal {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
+  position: fixed;
   left: 0;
   inset: 0;
-  
+  background-color: rgba(41, 41, 41, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+ 
 }
 
 .modal-content {
-  position: absolute;
   right: 0;
   left: 0;
   bottom: 0%;
-  z-index: 999;
-  height: 75vh;
+  color: white;
+  z-index: 99;
+  position: fixed;
+  height: 95vh;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
-  background: black;
+  width: 900px;
+  background: var(--modal-color);
   animation: rise 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
+  padding: 18px;
+  border-radius: 20px 20px 0 0;
 }
 
 @keyframes rise {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(0, 100%);
   }
   100% {
     transform: translate(0, 0);

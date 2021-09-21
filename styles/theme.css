@@ -7,6 +7,7 @@
   --card-color: rgb(39, 39, 255);
   --border-color: white;
   --card-font-color: white;
+  --modal-color: rgb(39, 39, 255);
 }
 
 [data-theme="dark"] {
@@ -15,6 +16,7 @@
   --shadow: 0 8px 6px -6px #0e0e0e;
   --star-color: #D9FBFD;
   --card-color: #4e4670;
+  --modal-color: #4e4670;
   --border-color: #f9d71c;
 }
 
