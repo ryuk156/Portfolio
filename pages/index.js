@@ -1,6 +1,7 @@
 import Layout from "../Components/Layout/index";
 
 import { getPostData } from "../lib/parseMarkdown";
+import Post from "./projects/[id]";
 
 export async function getStaticProps() {
   const allPostData = getPostData();
@@ -13,7 +14,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostData }) {
   return (
-    <div>
+    <div className="hide-x-scroll" >
       <Layout data={allPostData} />
     </div>
   );

@@ -8,8 +8,6 @@
   left: 0;
   inset: 0;
   background-color: rgba(41, 41, 41, 0.8);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
  
 }
 
@@ -20,18 +18,18 @@
   color: white;
   z-index: 99;
   position: fixed;
-  height: 95vh;
+  height: 85vh;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 900px;
   background: var(--modal-color);
-  animation: rise 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
+  animation: downEntry 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
   padding: 18px;
   border-radius: 20px 20px 0 0;
 }
 
-@keyframes rise {
+@keyframes downEntry {
   0% {
     transform: translate(0, 100%);
   }
@@ -39,3 +37,5 @@
     transform: translate(0, 0);
   }
 }
+
+

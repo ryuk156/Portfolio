@@ -16,10 +16,20 @@ body {
   color: var(--font-color);
   background-color: var(--color-primary);
   transition: var(--transition-delay);
-  overflow-x: hidden;
-  
 }
 
 * {
   box-sizing: border-box;
+}
+
+.hide-x-scroll {
+  overflow-x: hidden;
+}
+
+.hide-all-scroll {
+  overflow: hidden;
+}
+
+#main-view{
+  transition: 1s filter linear, 1s -webkit-filter linear;
 }

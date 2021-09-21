@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Layout from "../../Components/Layout/index";
 import Modal from "../../Components/Modal/Modal";
 import {
@@ -19,17 +19,16 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Post({ allPostData, postData }) {
-  
-  const [visible,setVisible]=useState(false)
-
-  // const closeModal=()=>{
-  //    setVisible(!visible)
-  // }
-
+  const elementRef = useRef();
+  if (process.browser) {
+    elementRef.current = document.getElementById?.("main-view");
+  }
   return (
     <div>
-      <Layout data={allPostData} />
-      <Modal title={postData.title}  />
+      <div ref={elementRef} id="main-view">
+        <Layout data={allPostData} />
+      </div>
+      <Modal layoutRef={elementRef} title={postData.title} />
     </div>
   );
 }
