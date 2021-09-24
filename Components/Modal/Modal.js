@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from "react";
-import { useRouter } from 'next/dist/client/router';
-import Link from "next/link";
-const Modal = ({ title, layoutRef }) => {
+import React, { useEffect} from "react";
+import { useRouter } from "next/dist/client/router";
+import Tags from "../Tags/Tags";
+// import Link from "next/link";
+const Modal = ({ postdata, layoutRef }) => {
   const router = useRouter();
   useEffect(() => {
     const getRef = layoutRef?.current;
+    console.log(getRef);
     document.body.classList.add("hide-all-scroll");
     if (getRef) getRef.style.setProperty("filter", "blur(5px)");
     return () => {
@@ -14,15 +16,39 @@ const Modal = ({ title, layoutRef }) => {
   }, [layoutRef]);
 
   function onClose() {
-    router.push('/', undefined, { scroll: false });
+    router.push("/", undefined, { scroll: false });
   }
+
+   console.log(postdata.tags)
+  const image="/images/"+ `${postdata.profile}`;
 
   return (
     <div>
-    
-        <div className="modal" onClick={()=>onClose()}> </div>
-    
-      <div className="modal-content">{title}</div>
+      <div className="modal" onClick={() => onClose()}></div>
+      <div className="modal-content">
+        <div className="modal-start-content">
+          <div className="modal-item-a">
+            <img src={image} className="modal-img" />
+          </div>
+          <div className="modal-item-b">
+            <div className="b-content">{postdata.title}</div>
+            
+          </div>
+
+        </div>
+        <div className="modal-main-content">
+        <div className="modal-tags">
+               {
+                 postdata.tags.map((tag,index)=>{
+                   return(
+                    <Tags key={index} tag={tag} />
+                   )
+                 })
+               }
+              
+             </div>
+             </div>
+      </div>
     </div>
   );
 };

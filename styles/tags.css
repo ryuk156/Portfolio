@@ -1,0 +1,13 @@
+
+@import url("theme.css");
+
+.tags{
+    border: 3px solid white;
+    width: 100px;
+    text-align:  center;
+    background: var(--tag-color);
+    border-radius: 5px ;
+    margin: 8px;
+    padding: 4px;
+    box-shadow: var(--shadow);
+}

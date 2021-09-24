@@ -23,13 +23,16 @@ export default function Post({ allPostData, postData }) {
   if (process.browser) {
     elementRef.current = document.getElementById?.("main-view");
   }
+
   return (
-    <div>
-      <div ref={elementRef} id="main-view">
-        <Layout data={allPostData} />
-      </div>
-      <Modal layoutRef={elementRef} title={postData.title} />
+    <>
+    <div ref={elementRef} id="main-view">
+    <Layout  data={allPostData} />
     </div>
+     
+
+      <Modal layoutRef={elementRef} postdata={postData} />
+    </>
   );
 }
 

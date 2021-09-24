@@ -32,6 +32,7 @@
 .card-item-b {
   grid-area: item-2;
   padding-top: 8px;
+  font-weight: 600;
 }
 
 .card-img {

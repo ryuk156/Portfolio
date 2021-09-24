@@ -7,7 +7,7 @@ const Board = ({cardsData}) => {
         {
          cardsData && cardsData.map((card)=>{
             return(
-              <Card key={card.id} title={card.title} id={card.id}  />
+              <Card key={card.id} cardData={card} />
             )
           })
         }

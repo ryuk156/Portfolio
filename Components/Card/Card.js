@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import Modal from "../Modal/Modal";
 
-import Link from "next/link"
+import Link from "next/link";
 
-const Card = ({title,id}) => {
+const Card = ({ cardData }) => {
+  const image="/images/"+ `${cardData.profile}`;
   return (
-    <Link href={`/projects/${id}`} >
-    <div className="card">
-   
-
-      <div className="card-content">
-        <div className="card-item-a">
-          <img src="/images/me.png" className="card-img" />
+    <Link href={`/projects/${cardData.id}`}>
+      <div className="card">
+        <div className="card-content">
+          <div className="card-item-a">
+            <img src={image} className="card-img" />
+          </div>
+          <div className="card-item-b">{cardData.title}</div>
         </div>
-        <div className="card-item-b">{title}</div>
       </div>
-     
-    </div>
     </Link>
   );
 };
