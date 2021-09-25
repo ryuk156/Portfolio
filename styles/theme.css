@@ -9,6 +9,7 @@
   --card-font-color: white;
   --modal-color: rgb(39, 39, 255);
   --tag-color: #417dfa;
+  --icon-color: gray;
 }
 
 [data-theme="dark"] {
@@ -20,6 +21,7 @@
   --modal-color: #4e4670;
   --border-color: #f9d71c;
   --tag-color: #664e88;
+  --icon-color: gray;
 }
 
 /* :root {

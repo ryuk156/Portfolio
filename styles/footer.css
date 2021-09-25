@@ -2,10 +2,36 @@
 
 .footer {
   width: 100%;
-  position: a;
+  position: fixed;
   left: 0;
   bottom: 0;
-  color: darkblue;
-  text-align: center;
-  z-index: -4;
+  background-color: transparent;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+}
+
+
+.footer-icons{
+  padding-right: 25px;
+  padding-bottom: 8px;
+  display: flex;
+}
+.footer-other{
+  padding-left: 18px;
+  padding-bottom: 8px;
+}
+
+.icon{
+  font-size: 28px;
+  color: var(--icon-color);
+  margin: 8px
+;
+transition: color , transform 0.3s;
+transform: scale(1);
+}
+
+.icon:hover{
+   transform: scale(1.1);
+  color: var(--font-color);
 }

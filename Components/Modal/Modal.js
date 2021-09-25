@@ -7,11 +7,8 @@ const Modal = ({ postdata, layoutRef }) => {
   const router = useRouter();
   useEffect(() => {
     const getRef = layoutRef?.current;
-    console.log(getRef);
-    document.body.classList.add("hide-all-scroll");
     if (getRef) getRef.style.setProperty("filter", "blur(5px)");
     return () => {
-      document.body.classList.remove("hide-all-scroll");
       getRef?.style.setProperty("filter", "blur(0px)");
     };
   }, [layoutRef]);
