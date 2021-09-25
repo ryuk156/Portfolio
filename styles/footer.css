@@ -1,9 +1,11 @@
 @import url("theme.css");
 
-
-.footer{
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-  flex-direction: column;
+.footer {
+  width: 100%;
+  position: a;
+  left: 0;
+  bottom: 0;
+  color: darkblue;
+  text-align: center;
+  z-index: -4;
 }
