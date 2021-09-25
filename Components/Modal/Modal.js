@@ -1,6 +1,7 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
 import Tags from "../Tags/Tags";
+import Image from "next/image"
 // import Link from "next/link";
 const Modal = ({ postdata, layoutRef }) => {
   const router = useRouter();
@@ -19,8 +20,9 @@ const Modal = ({ postdata, layoutRef }) => {
     router.push("/", undefined, { scroll: false });
   }
 
-   console.log(postdata.tags)
-  const image="/images/"+ `${postdata.profile}`;
+  console.log(postdata.tags);
+  const image = "/images/" + `${postdata.profile}`;
+  const drawerImage = "/images/" + `${postdata.gif}`;
 
   return (
     <div>
@@ -31,23 +33,23 @@ const Modal = ({ postdata, layoutRef }) => {
             <img src={image} className="modal-img" />
           </div>
           <div className="modal-item-b">
-            <div className="b-content">{postdata.title}</div>
-            
+            <div className="modal-title">{postdata.title}</div>
+            {/* <div className="modal-excerpt">{postdata.excerpt}</div> */}
           </div>
-
         </div>
         <div className="modal-main-content">
-        <div className="modal-tags">
-               {
-                 postdata.tags.map((tag,index)=>{
-                   return(
-                    <Tags key={index} tag={tag} />
-                   )
-                 })
-               }
-              
-             </div>
-             </div>
+          <div className="modal-tags">
+            {postdata.tags.map((tag, index) => {
+              return <Tags key={index} tag={tag} />;
+            })}
+          </div>
+          <div className="project-description">
+            <div dangerouslySetInnerHTML={{ __html: postdata.contentHtml }} />
+          </div>
+          <div className="modal-image-drawer">
+              <Image src={drawerImage} width={500} height={300} />
+          </div>
+        </div>
       </div>
     </div>
   );

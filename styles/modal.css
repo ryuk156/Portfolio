@@ -26,6 +26,7 @@
   animation: downEntry 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
   padding: 18px;
   border-radius: 20px 20px 0 0;
+  overflow-y: scroll;
 }
 
 .modal-start-content {
@@ -55,12 +56,24 @@
 
 }
 
-.b-content{
+.modal-title{
   margin: 20px;
   text-decoration-line: underline;
   text-decoration-style: double;
   font-size: 28px;
   font-weight: 600;
+}
+.modal-excerpt{
+  margin-top: 10px;
+  margin-left: 20px;
+
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.project-description{
+  margin-left: 12px;
+  font-size: 18px;
 }
 
 .modal-main-content{
@@ -69,6 +82,11 @@
 
 .modal-tags{
   display: flex;
+}
+
+.modal-image-drawer{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -88,7 +106,7 @@
     width: 100%;
   }
 
-  .modal-main-content {
+  .modal-start-content {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
