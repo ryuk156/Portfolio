@@ -1,7 +1,6 @@
 import Layout from "../Components/Layout/index";
 
 import { getPostData } from "../lib/parseMarkdown";
-import Post from "./projects/[id]";
 
 export async function getStaticProps() {
   const allPostData = getPostData();
