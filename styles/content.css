@@ -35,6 +35,30 @@
   transition: var(--transition-delay);
 }
 
+.experince-conatiner{
+  display: flex;
+  justify-content: center;
+}
+
+.more-button{
+  box-shadow: var(--shadow);
+  color: var(--card-font-color);
+  text-align: center;
+  transition: 0.3s;
+  transform: scale(1);
+  font-size: 20px;
+  margin: 10px;
+  background-color: var(--card-color);
+  border-radius: 12px;
+  width: 120px;
+  padding: 8px;
+}
+
+.more-button:hover,
+.more-button:focus {
+  transform: scale(1.08);
+}
+
 @keyframes wave {
   0% {
     transform: scale(1) rotate(0deg);

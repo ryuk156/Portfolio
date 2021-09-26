@@ -6,6 +6,7 @@
 @import url("card.css");
 @import url("modal.css");
 @import url("tags.css");
+@import url("experience.css");
 @import url("footer.css");
 
 html,
@@ -17,7 +18,7 @@ body {
   color: var(--font-color);
   background-color: var(--color-primary);
   transition: var(--transition-delay);
-  min-height: 100vh;
+
 }
 
 * {

@@ -1,37 +1,36 @@
 @import url("theme.css");
 
 .footer {
+ 
   width: 100%;
-  position: fixed;
+  
   left: 0;
   bottom: 0;
+  position: absolute;
   background-color: transparent;
   display: flex;
-  z-index: 1;
   justify-content: center;
 }
 
-
-.footer-icons{
+.footer-icons {
   padding-right: 25px;
   padding-bottom: 8px;
   display: flex;
 }
-.footer-other{
+.footer-other {
   padding-left: 18px;
   padding-bottom: 8px;
 }
 
-.icon{
+.icon {
   font-size: 28px;
   color: var(--icon-color);
-  margin: 8px
-;
-transition: color , transform 0.3s;
-transform: scale(1);
+  margin: 8px;
+  transition: color, transform 0.3s;
+  transform: scale(1);
 }
 
-.icon:hover{
-   transform: scale(1.1);
+.icon:hover {
+  transform: scale(1.1);
   color: var(--font-color);
 }

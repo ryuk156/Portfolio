@@ -25,6 +25,14 @@
     grid-area: item-2;
   } */
 
+  .board-title{
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--card-font-color);
+  }
+
 @media only screen and (max-width: 850px) {
   .board-content {
     grid-template-columns: 1fr;
