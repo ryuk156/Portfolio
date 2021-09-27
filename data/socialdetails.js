@@ -16,7 +16,7 @@ const Media= [
   {
     link: "https://twitter.com/Yash15601",
     name: "twitter",
-  },
+  }, 
   {
     link: "yashp2928@gmail.com",
     name: "envelope",
