@@ -21,7 +21,15 @@ const Experience = () => {
 
                 <div className="modal-main-content">
                   <div className="job-description">
-                    {experience.job_description}
+                    {experience.job_description && experience.job_description.map((task,index)=>{
+                      return(
+                        <div key={index} className="job-list">
+                            <div className="job-task">
+                            <i className="fa fa-arrow-right" aria-hidden="true"></i> {task}
+                              </div>
+                          </div>
+                      )
+                    })}
                   </div>
                   <div className="exp-link">
                       <Link href={experience.link} passHref>
