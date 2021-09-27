@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   margin: 18px;
+  
 }
 
 .start_content {
@@ -24,7 +25,16 @@
   font-weight: 600;
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.intro-details{
+  font-size: 16px;
+  max-width: 710px ;
+  font-weight: 300;
+  margin-top: 8px;
+  word-spacing: 4px;
 }
 
 .waving-hand {
