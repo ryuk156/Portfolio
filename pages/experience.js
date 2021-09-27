@@ -17,7 +17,6 @@ export default function DisplayExperience() {
           </div>
         </Link>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }

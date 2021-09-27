@@ -23,7 +23,7 @@
   margin-right: auto;
   width: 700px;
   background: var(--modal-color);
-  animation: downEntry 700ms forwards cubic-bezier(0.32, 1, 0.23, 1);
+  animation: downEntry 1s forwards cubic-bezier(0.32, 1, 0.23, 1);
   padding: 18px;
   border-radius: 20px 20px 0 0;
   overflow-y: scroll;
@@ -57,8 +57,8 @@
 
 .modal-title {
   margin: 20px;
-  text-decoration-line: underline;
-  text-decoration-style: double;
+  /* text-decoration-line: underline;
+  text-decoration-style: double; */
   font-size: 28px;
   font-weight: 600;
 }
