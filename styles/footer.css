@@ -5,7 +5,7 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  position: relative;
+  position: absolute;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -34,4 +34,11 @@
 .icon:hover {
   transform: scale(1.1);
   color: var(--font-color);
+}
+
+
+@media (max-width: 820px) {
+  .footer{
+    position: relative;
+  }
 }

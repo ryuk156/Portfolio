@@ -62,6 +62,7 @@
   border-radius: 12px;
   width: 120px;
   padding: 8px;
+  cursor: pointer 
 }
 
 .more-button:hover,
