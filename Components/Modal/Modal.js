@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
 import Tags from "../Tags/Tags";
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
 // import Link from "next/link";
 const Modal = ({ postdata, layoutRef }) => {
   const router = useRouter();
@@ -33,6 +34,13 @@ const Modal = ({ postdata, layoutRef }) => {
             <div className="modal-title">{postdata.title}</div>
             {/* <div className="modal-excerpt">{postdata.excerpt}</div> */}
           </div>
+          <div className="modal-item-c">
+          <div className="modal-project-link">
+            <Link href={postdata.link} passHref>
+              <i className="fa fa-github" aria-hidden="true"></i>
+            </Link>
+          </div>
+          </div>
         </div>
         <div className="modal-main-content">
           <div className="modal-tags">
@@ -44,8 +52,10 @@ const Modal = ({ postdata, layoutRef }) => {
             <div dangerouslySetInnerHTML={{ __html: postdata.contentHtml }} />
           </div>
           <div className="modal-image-drawer">
-              <Image src={drawerImage} width={500} height={300} />
+            <Image src={drawerImage} width={500} height={300} />
           </div>
+
+          
         </div>
       </div>
     </div>

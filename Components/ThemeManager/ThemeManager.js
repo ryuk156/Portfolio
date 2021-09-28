@@ -4,11 +4,6 @@ const ThemeManager = () => {
   const { theme, setTheme } = useTheme();
 
   const changeTheme = () => {
-    const sun_moon = document.querySelector(".sun-moon");
-    const currentRotation = parseInt(
-      getComputedStyle(sun_moon).getPropertyValue("--rotation")
-    );
-    sun_moon.style.setProperty("--rotation", currentRotation + 180);
     setTheme(theme === "dark" ? "light" : "dark");
   };
 

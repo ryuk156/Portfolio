@@ -1,12 +1,8 @@
 @import url("theme.css");
 
-/* .sun-moon {
-  --rotation: 0;
-  position: absolute;
-  height: 100vh; */
-/* transform: rotate(calc(var(--rotation) * 1deg));
-  transition: transform var(--transition-delay);
-} */
+.sun-moon {
+  cursor: pointer;
+}
 
 /* [data-theme="dark"] .sun-moon {
   --rotation: 180;

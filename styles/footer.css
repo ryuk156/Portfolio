@@ -28,6 +28,7 @@
   margin: 8px;
   transition: color, transform 0.3s;
   transform: scale(1);
+  cursor: pointer;
 }
 
 .icon:hover {

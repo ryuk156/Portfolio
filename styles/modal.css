@@ -31,9 +31,9 @@
 
 .modal-start-content {
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr 10fr 1fr;
   grid-template-rows: 1fr min-content;
-  grid-template-areas: "item-1 item-2";
+  grid-template-areas: "item-1 item-2 item-3";
   padding: 18px;
 }
 
@@ -45,6 +45,9 @@
 
 .modal-item-b {
   grid-area: item-2;
+}
+.modal-item-c {
+  grid-area: item-3;
 }
 
 .modal-img {
@@ -71,7 +74,7 @@
 }
 
 .project-description {
-  margin-left: 12px;
+  margin-left: 8px;
   font-size: 18px;
 }
 
@@ -86,6 +89,15 @@
 .modal-image-drawer {
   display: flex;
   justify-content: center;
+}
+
+.modal-project-link {
+  font-size: 30px;
+  margin-top: 18px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  color: var(--card-font-color);
+  cursor: pointer;
 }
 
 @keyframes downEntry {
@@ -111,5 +123,11 @@
 
   .modal-item-b {
     text-align: center;
+  }
+  .modal-item-c {
+    text-align: center;
+  }
+  .modal-project-link {
+    margin-top: 8px;
   }
 }
