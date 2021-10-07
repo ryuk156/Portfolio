@@ -18,7 +18,6 @@ const Modal = ({ postdata, layoutRef }) => {
     router.push("/", undefined, { scroll: false });
   }
 
-  console.log(postdata.tags);
   const image = "/images/" + `${postdata.profile}`;
   const drawerImage = "/images/" + `${postdata.gif}`;
 

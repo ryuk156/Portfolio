@@ -26,11 +26,9 @@ export default function Post({ allPostData, postData }) {
 
   return (
     <>
-    <div ref={elementRef} id="main-view">
-    <Layout  data={allPostData} />
-    </div>
-     
-
+      <div ref={elementRef} id="main-view">
+        <Layout data={allPostData} />
+      </div>
       <Modal layoutRef={elementRef} postdata={postData} />
     </>
   );
