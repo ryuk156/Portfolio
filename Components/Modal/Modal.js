@@ -4,10 +4,11 @@ import Tags from "../Tags/Tags";
 import Image from "next/image";
 import Link from "next/link";
 // import Link from "next/link";
-const Modal = ({ postdata, layoutRef }) => {
+const Modal = ({ postdata, layoutRef, ModalRef }) => {
   const router = useRouter();
   useEffect(() => {
     const getRef = layoutRef?.current;
+    const modalref = ModalRef?.current;
     if (getRef) getRef.style.setProperty("filter", "blur(5px)");
     return () => {
       getRef?.style.setProperty("filter", "blur(0px)");

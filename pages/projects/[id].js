@@ -20,8 +20,10 @@ export async function getStaticProps({ params }) {
 
 export default function Post({ allPostData, postData }) {
   const elementRef = useRef();
+  const modalRef =useRef()
   if (process.browser) {
     elementRef.current = document.getElementById?.("main-view");
+    modalRef.current = document.getElementById?.("modal-view");
   }
 
   return (
