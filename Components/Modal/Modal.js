@@ -26,6 +26,9 @@ const Modal = ({ postdata, layoutRef, ModalRef }) => {
     <div>
       <div className="modal" onClick={() => onClose()}></div>
       <div className="modal-content">
+        <div className="modal-close" onClick={() => onClose()}>
+          <i className="fa fa-times" aria-hidden="true"></i>
+        </div>
         <div className="modal-start-content">
           <div className="modal-item-a">
             <img src={image} className="modal-img" />
@@ -35,11 +38,11 @@ const Modal = ({ postdata, layoutRef, ModalRef }) => {
             {/* <div className="modal-excerpt">{postdata.excerpt}</div> */}
           </div>
           <div className="modal-item-c">
-          <div className="modal-project-link">
-            <Link href={postdata.link} passHref>
-              <i className="fa fa-github" aria-hidden="true"></i>
-            </Link>
-          </div>
+            <div className="modal-project-link">
+              <Link href={postdata.link} passHref>
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="modal-main-content">
@@ -54,8 +57,6 @@ const Modal = ({ postdata, layoutRef, ModalRef }) => {
           <div className="modal-image-drawer">
             <Image src={drawerImage} width={500} height={300} />
           </div>
-
-          
         </div>
       </div>
     </div>
