@@ -9,12 +9,14 @@
   background-color: transparent;
   display: flex;
   justify-content: center;
- 
+  /* margin-left: 10px;
+  overflow-x: hidden; */
 }
 
 .footer-icons {
   padding-right: 25px;
   padding-bottom: 8px;
+  
   display: flex;
 }
 .footer-other {
@@ -42,5 +44,13 @@
     position: relative;
     padding-left: 25px;
     padding-top: 20px;
+  }
+}
+
+@media (max-height: 820px) {
+  .footer{
+    position: relative;
+    padding-top: 20px;
+    padding-left: 25px;
   }
 }
