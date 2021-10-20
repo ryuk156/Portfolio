@@ -62,6 +62,7 @@
 
 .modal-item-b {
   grid-area: item-2;
+  user-select: none;
 }
 .modal-item-c {
   grid-area: item-3;
@@ -77,15 +78,13 @@
 
 .modal-title {
   margin: 20px;
-  /* text-decoration-line: underline;
-  text-decoration-style: double; */
   font-size: 28px;
   font-weight: 600;
+  user-select: none;
 }
 .modal-excerpt {
   margin-top: 10px;
   margin-left: 20px;
-
   font-size: 15px;
   font-weight: 400;
 }
@@ -93,6 +92,7 @@
 .project-description {
   margin-left: 8px;
   font-size: 18px;
+  user-select: none;
 }
 
 .modal-main-content {
@@ -101,6 +101,7 @@
 
 .modal-tags {
   display: flex;
+  user-select: none;
 }
 
 .modal-image-drawer {
