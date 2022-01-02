@@ -1,5 +1,6 @@
 import Experience_Details from "../../data/experiencedetails";
 import Link from "next/link"
+import  Footer from '../Footer/Footer'
 const Experience = () => {
   return (
     <div className="exp-content">
