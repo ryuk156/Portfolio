@@ -10,6 +10,13 @@ const Seo = () => {
         content="Yash Patel | UI Engineer"
         key="title"
       />
+       <meta
+        property="og:description"
+        content="I like to build things with other fun and creative people. I enjoy
+        solving complex problems through minimal solutions that have
+        deep impacts on individuals and communities."
+        key="description"
+      />
       <meta property="og:url" content="https://www.yash1560.me/" key="url" />
       <meta property="og:image" content="/extra/me.png" />
       <meta property="og:image:width" content="200" />
