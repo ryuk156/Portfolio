@@ -7,7 +7,6 @@ import Experience from "../Components/Experience/Experience";
 export default function DisplayExperience() {
   return (
     <div className="main-container">
-      <Seo />
       <Navbar />
       <Experience />
       <div className="experince-conatiner">
