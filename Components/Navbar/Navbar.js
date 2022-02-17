@@ -15,6 +15,7 @@ const Navbar = () => {
           <div> [ UTC +05:30 ]</div>
         </div>
       </div>
+
       <div className="nav-theme-switcher">
         <ThemeManager />
       </div>

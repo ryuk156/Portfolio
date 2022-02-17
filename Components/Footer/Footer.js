@@ -1,8 +1,26 @@
 import Media from "../../data/socialdetails";
 import Link from "next/link";
+import Image from "next/image";
 const Footer = () => {
   return (
     <div className="footer">
+      <div className="footer-job">
+        {/* <div>Currently at</div> */}
+        <div className="footer-job-name" title="Currently at">
+          <Link href="https://www.crescibit.com/">
+            <Image
+              className="footer-job-name-text"
+              src="/images/crescibit.png"
+              width={30}
+              height={30}
+              alt="crescibit"
+            />
+          </Link>
+          <Link href="https://www.crescibit.com/">
+            <div className="footer-job-name-text">Crescibit Technology</div>
+          </Link>
+        </div>
+      </div>
       <div className="footer-icons">
         {Media.map((icons, index) => {
           const name = "fa fa-" + `${icons.name}`;
