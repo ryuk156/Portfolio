@@ -11,18 +11,19 @@
 
 .exp-board {
   margin-top: 10px;
-  width: 45%;
+  width: 70%;
   background-color: var(--card-color);
   border-radius: 15px;
 }
 
 .exp-board-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 0.8rem;
   grid-template-rows: auto;
   padding: 3px;
   margin: 12px;
+  height: 10;
   user-select: none;
 }
 
@@ -87,6 +88,8 @@
   padding:8px
 }
 .exp-link{
+     display: flex;
+     align-items: flex-end;
     font-size: 25px;
     margin-top: 8px;
     margin-left: 10px;

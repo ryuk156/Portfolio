@@ -7,6 +7,9 @@ const Footer = () => {
       <div className="footer-job">
         {/* <div>Currently at</div> */}
         <div className="footer-job-name" title="Currently at">
+        {/* <div style={{margin: "6px"}}>
+            <span className="indicator online"></span> 
+          </div> */}
           <Link href="https://www.crescibit.com/">
             <Image
               className="footer-job-name-text"
@@ -19,6 +22,7 @@ const Footer = () => {
           <Link href="https://www.crescibit.com/">
             <div className="footer-job-name-text">Crescibit Technology</div>
           </Link>
+         
         </div>
       </div>
       <div className="footer-icons">

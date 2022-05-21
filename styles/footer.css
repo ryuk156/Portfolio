@@ -47,6 +47,15 @@
   color: var(--font-color);
 }
 
+.indicator.online {
+  background: #28B62C;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  -webkit-animation: pulse-animation 2s infinite linear;
+}
+
 @media (max-width: 820px) {
   .footer {
     position: relative;
@@ -69,4 +78,13 @@
     padding-top: 20px;
     padding-left: 25px;
   }
+}
+
+
+@-webkit-keyframes pulse-animation {
+	0% { -webkit-transform: scale(1); }
+	25% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.2) }
+    75% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(1); }
 }
