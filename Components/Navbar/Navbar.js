@@ -12,7 +12,7 @@ const Navbar = () => {
         />
         <div className="nav-brand-name">
           <div className="nav-name">🇮🇳 Yash Patel</div>
-          <div> [ UTC +05:30 ]</div>
+          <div> [ UTC -04:00 ]</div>
         </div>
       </div>
 
