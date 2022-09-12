@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" style={{ }}>
       <div className="footer-job">
         {/* <div>Currently at</div> */}
         <div className="footer-job-name" title="Currently at">

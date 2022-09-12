@@ -32,9 +32,7 @@ body {
 /* .hide-all-scroll {
   overflow: hidden;
 } */
-.main-container{
-  flex-shrink: 0;
-}
+
 
 #main-view{
  transition: 1s filter linear, 1s -webkit-filter linear;
