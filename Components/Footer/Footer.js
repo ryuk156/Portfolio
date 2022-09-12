@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="footer" style={{ }}>
-      <div className="footer-job">
+      <div className="footer-job" style={{paddingBottom: "10px"}}>
         {/* <div>Currently at</div> */}
         <div className="footer-job-name" title="Currently at">
         {/* <div style={{margin: "6px"}}>
@@ -20,7 +20,7 @@ const Footer = () => {
             />
           </Link>
           <Link href="https://goo.gl/maps/zySFC2L1URhTT16g9">
-            <div className="footer-job-name-text">
+            <div className="footer-job-name-text" >
               <div style={{display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <div style={{fontSize: "18px"}}>
                  London
