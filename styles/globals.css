@@ -36,4 +36,5 @@ body {
 
 #main-view{
  transition: 1s filter linear, 1s -webkit-filter linear;
+ height: 100vh;
 }
