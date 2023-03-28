@@ -55,7 +55,7 @@ const Modal = ({ postdata, layoutRef, ModalRef }) => {
             <div dangerouslySetInnerHTML={{ __html: postdata.contentHtml }} />
           </div>
           <div className="modal-image-drawer">
-            <Image src={drawerImage} width={500} height={300} />
+            <img src={drawerImage} width={postdata.width?postdata.width: "500px"} height="auto"/>
           </div>
         </div>
       </div>
