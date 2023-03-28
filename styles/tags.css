@@ -3,11 +3,11 @@
 
 .tags{
     border: 3px solid white;
-    width: 100px;
+    width: auto;
     text-align:  center;
     background: var(--tag-color);
     border-radius: 5px ;
     margin: 8px;
-    padding: 4px;
+    padding: 5px;
     box-shadow: var(--shadow);
 }
