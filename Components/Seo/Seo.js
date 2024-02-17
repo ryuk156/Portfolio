@@ -17,7 +17,7 @@ const Seo = () => {
         deep impacts on individuals and communities."
         key="description"
       />
-      <meta property="og:url" content="https://www.yash1560.me/" key="url" />
+      <meta property="og:url" content="https://meyash.website" key="url" />
       <meta property="og:image" content="/extra/me.png" />
       <meta property="og:image:width" content="200" />
       <meta property="og:image:height" content="200" />
