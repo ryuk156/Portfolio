@@ -10,7 +10,7 @@ const Container = ({ content }) => {
           Hey!<span className="waving-hand">👋</span>
         </div>
         <div className="intro_content">
-        I'm Yash and I'm UI Engineer and an open source contributor.
+        I'm Yash and I'm Software Engineer and an open source contributor.
         </div>
         <p className="intro-details">
         
